@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import File from "./File";
 
 // returns info of Atomic Habits by James Clear
 function Atomic() {
 
   const [results, setResult] = useState(["Not yet found."]);
+  const [query, setQuery] = useState("");
 
   // useEffect(() => {
   //   axios.get('/atomic').then(response => {
@@ -15,7 +17,7 @@ function Atomic() {
 
   function handleSearch() {
     console.log("clicked");
-    axios.get('https://nameless-falls-09464.herokuapp.com/atomic').then(response => {
+    axios.get('https://nameless-falls-09464.herokuapp.com/atomic', { crossdomain: true }).then(response => {
       setResult(response.data);
       // console.log(response.data);
     });
@@ -25,14 +27,14 @@ function Atomic() {
     <div>
       <button onClick={handleSearch}>Search for Atomic Habits</button>
       <h1>Results returned by the search query: </h1>
-      {results.map(result => {
+      {results.map((result, index) => {
         return (
-          <div>
-          <p>Title: {result.title}</p>
-          <p>Author: {result.author}</p>
-          <p>Download: {result.download}</p>
-          <hr></hr>
-        </div>
+          <File 
+            key={index}
+            title={result.title}
+            author={result.author}
+            download={result.download}
+          />
         );
       })}
     </div>
