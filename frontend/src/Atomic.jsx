@@ -4,7 +4,7 @@ import axios from "axios";
 // returns info of Atomic Habits by James Clear
 function Atomic() {
 
-  const [results, setResult] = useState("Not yet found.");
+  const [results, setResult] = useState(["Not yet found."]);
 
   // useEffect(() => {
   //   axios.get('/atomic').then(response => {
