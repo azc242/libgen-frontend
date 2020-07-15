@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/libgen-frontend/static/css/main.5f361e03.chunk.css",
-    "main.js": "/libgen-frontend/static/js/main.101642ec.chunk.js",
-    "main.js.map": "/libgen-frontend/static/js/main.101642ec.chunk.js.map",
+    "main.css": "/libgen-frontend/static/css/main.523f09c5.chunk.css",
+    "main.js": "/libgen-frontend/static/js/main.5330a3c5.chunk.js",
+    "main.js.map": "/libgen-frontend/static/js/main.5330a3c5.chunk.js.map",
     "runtime-main.js": "/libgen-frontend/static/js/runtime-main.b942a0d9.js",
     "runtime-main.js.map": "/libgen-frontend/static/js/runtime-main.b942a0d9.js.map",
     "static/js/2.e94bb2c6.chunk.js": "/libgen-frontend/static/js/2.e94bb2c6.chunk.js",
     "static/js/2.e94bb2c6.chunk.js.map": "/libgen-frontend/static/js/2.e94bb2c6.chunk.js.map",
     "index.html": "/libgen-frontend/index.html",
-    "precache-manifest.7639b7d069e1c1f605277a37896b0ee7.js": "/libgen-frontend/precache-manifest.7639b7d069e1c1f605277a37896b0ee7.js",
+    "precache-manifest.958271b26176451227d6aab674c29fc8.js": "/libgen-frontend/precache-manifest.958271b26176451227d6aab674c29fc8.js",
     "service-worker.js": "/libgen-frontend/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/libgen-frontend/static/css/main.5f361e03.chunk.css.map",
+    "static/css/main.523f09c5.chunk.css.map": "/libgen-frontend/static/css/main.523f09c5.chunk.css.map",
     "static/js/2.e94bb2c6.chunk.js.LICENSE.txt": "/libgen-frontend/static/js/2.e94bb2c6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b942a0d9.js",
     "static/js/2.e94bb2c6.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
-    "static/js/main.101642ec.chunk.js"
+    "static/css/main.523f09c5.chunk.css",
+    "static/js/main.5330a3c5.chunk.js"
   ]
 }
