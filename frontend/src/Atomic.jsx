@@ -15,7 +15,7 @@ function Atomic() {
 
   function handleSearch() {
     console.log("clicked");
-    axios.get('http://nameless-falls-09464.herokuapp.com/atomic').then(response => {
+    axios.get('https://nameless-falls-09464.herokuapp.com/atomic').then(response => {
       setResult(response.data);
       // console.log(response.data);
     });
