@@ -4,7 +4,7 @@ import axios from "axios";
 // returns info of Atomic Habits by James Clear
 function Atomic() {
 
-  const [results, setResult] = useState([]);
+  const [results, setResult] = useState("Not yet found.");
 
   // useEffect(() => {
   //   axios.get('/atomic').then(response => {
@@ -24,7 +24,7 @@ function Atomic() {
   return (
     <div>
       <button onClick={handleSearch}>Search for Atomic Habits</button>
-      <h1>Here are the results returned by the search query: </h1>
+      <h1>Results returned by the search query: </h1>
       {results.map(result => {
         return (
           <div>
