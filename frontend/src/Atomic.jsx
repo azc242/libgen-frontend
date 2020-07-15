@@ -14,7 +14,7 @@ function Atomic() {
   // }, []);
 
   function handleSearch() {
-    axios.get('/atomic').then(response => {
+    axios.get('https://nameless-falls-09464.herokuapp.com/atomic').then(response => {
       setResult(response.data);
       // console.log(response.data);
     });
