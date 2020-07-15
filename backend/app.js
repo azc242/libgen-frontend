@@ -3,7 +3,7 @@ const libgen = require('libgen');
 const app = express();
 const port = 5000;
 
-app.get('/', function(req, res){
+app.get('/atomic', function(req, res){
   
 
   (async () => {
