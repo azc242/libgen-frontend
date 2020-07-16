@@ -30,18 +30,6 @@ header h1 {
   font-weight: 200;
 }
 
-footer {
-  position: absolute;
-  text-align: center;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;
-}
-
-footer p {
-  color: #ccc;
-}
-
 a{
   text-decoration: none;
 }
@@ -84,8 +72,12 @@ form.create-note button {
 }
 
 /* Material Card Styles */
-.align-center {
+/* .align-center {
   text-align: center;
   margin: auto;
   justify-content: center;
+} */
+
+.control-size {
+  width: 20%;
 }

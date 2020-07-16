@@ -44,7 +44,6 @@ function OutlinedCard(props) {
         <Typography variant="body2" component="p">
           Extension: {props.extension}
           <br />
-          {'"a benevolent smile"'}
         </Typography>
       </CardContent>
       <CardActions className="align-center">

@@ -21,14 +21,12 @@ function Atomic() {
       <InputArea 
         onSearch={handleSearch}
       />
-      <div 
-      // hidden={results.length === 0}
-      className="display-results"
-      >
-        <h1>Results returned by the search query: </h1>
+      <div>
+        {/* <h1>Results returned by the search query: </h1> */}
         {results.map((result, index) => {
           return (
             <File 
+              className="control-size"
               key={index}
               title={result.title}
               author={result.author}
