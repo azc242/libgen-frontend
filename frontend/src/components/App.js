@@ -1,16 +1,18 @@
 import React from 'react';
 import Atomic from "./Atomic";
-
-import './App.css';
+import Header from "./Header";
+// import Footer from "./Footer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <Header />
         <Atomic />
-      </header>
     </div>
   );
 }
 
 export default App;
+
+
+//  "proxy": "http://localhost:5000",

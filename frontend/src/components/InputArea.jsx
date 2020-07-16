@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import SearchIcon from '@material-ui/icons/Search';
 
 function InputArea(props) {
 
@@ -15,9 +16,15 @@ function InputArea(props) {
 
   return(
     <div>
-      <form>
+      <form className="create-note">
         <input onChange={handleChange} value={query}></input>
-        <button onClick={submitNote}>Search</button>
+        <button onClick={submitNote}>
+          <div style={{
+            marginTop: 5
+          }}>
+            <SearchIcon />
+          </div>
+        </button>
       </form>
     </div>
   )
