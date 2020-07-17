@@ -15,15 +15,11 @@ function InputArea(props) {
   }
 
   return(
-    <div>
+    <div className="input-group mb-3">
       <form className="create-note">
         <input onChange={handleChange} value={query}></input>
         <button onClick={submitNote}>
-          <div style={{
-            marginTop: 5
-          }}>
             <SearchIcon />
-          </div>
         </button>
       </form>
     </div>

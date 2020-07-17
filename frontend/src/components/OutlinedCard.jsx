@@ -33,7 +33,7 @@ function OutlinedCard(props) {
     <Card className={classes.root} variant="outlined">
       <CardContent>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
-          {year}{props.pages !== "0" ? (" | " + props.pages + " pages") : " "}
+          {props.year}{props.pages !== "0" ? (" | " + props.pages + " pages") : " "}
         </Typography>
         <Typography variant="h5" component="h2">
           {props.title}
@@ -47,7 +47,7 @@ function OutlinedCard(props) {
         </Typography>
       </CardContent>
       <CardActions className="align-center">
-        <a href={props.directDownload === null ? props.download : props.directDownload} target="_blank">
+        <a href={props.download} target="_blank">
         <Button size="small">Download</Button>
         </a>
       </CardActions>
