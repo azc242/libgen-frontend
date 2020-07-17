@@ -15,6 +15,7 @@ body {
   background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
   color: #3282b8;
   padding: 0 16px;
+  height: 100%;
 }
 
 header {
@@ -31,6 +32,21 @@ header h1 {
 
 a{
   text-decoration: none;
+}
+
+footer {
+  position: fixed;
+  text-align: center;
+  bottom: 10px;
+  width: 100%;
+  height: 2.5rem;
+  z-index: -5;
+  line-height: 3px;
+  opacity: 70%;
+}
+
+footer p {
+  color: #ccc;
 }
 
 form.create-note {
@@ -74,13 +90,10 @@ form.create-note button {
   text-align: center;
 }
 
-/* Material Card Styles */
-/* .align-center {
-  text-align: center;
-  margin: auto;
-  justify-content: center;
-} */
-
 .control-size {
   width: 20%;
+}
+
+#root {
+  z-index: 20;
 }
