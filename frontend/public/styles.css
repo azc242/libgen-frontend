@@ -26,7 +26,6 @@ header {
 
 header h1 {
   color: #3282b8;
-  /* font-family: "McLaren", cursive; */
   font-weight: 200;
 }
 
@@ -41,7 +40,6 @@ form.create-note {
   margin: 30px auto 20px auto;
   background: #fff;
   padding: 15px;
-  /* border-radius: 7px; */
   border-radius: 7px 0px 0px 7px;
   box-shadow: 0 1px 5px rgb(138, 137, 137);
 }
@@ -62,7 +60,6 @@ form.create-note button {
   background: #3282b8;
   color: #f0f0f0;
   border: none;
-  /* border-radius: 10%; */
   border-radius: 2% 10% 10% 2%;
   width: 67px;
   height: 67px;
