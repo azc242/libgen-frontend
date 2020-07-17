@@ -26,7 +26,6 @@ header {
 
 header h1 {
   color: #3282b8;
-  /* font-family: "McLaren", cursive; */
   font-weight: 200;
 }
 
@@ -36,11 +35,12 @@ a{
 
 form.create-note {
   position: relative;
-  width: 480px;
+  width: 50%;
+  min-width: 100px;
   margin: 30px auto 20px auto;
   background: #fff;
   padding: 15px;
-  border-radius: 7px;
+  border-radius: 7px 0px 0px 7px;
   box-shadow: 0 1px 5px rgb(138, 137, 137);
 }
 form.create-note input {
@@ -48,20 +48,21 @@ form.create-note input {
   border: none;
   padding: 4px;
   outline: none;
-  font-size: 1.2em;
-  font-family: inherit;
+  font-size: 1.2rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
   resize: none;
 }
 form.create-note button {
   position: absolute;
-  right: -58px;
+  right: -66px;
   bottom: 0px;
   background: #3282b8;
   color: #f0f0f0;
   border: none;
-  border-radius: 10%;
-  width: 60px;
-  height: 60px;
+  border-radius: 2% 10% 10% 2%;
+  width: 67px;
+  height: 67px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   outline: none;
