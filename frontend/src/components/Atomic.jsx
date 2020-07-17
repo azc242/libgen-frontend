@@ -2,18 +2,24 @@ import React, { useState } from "react";
 import axios from "axios";
 import File from "./File";
 import InputArea from "./InputArea"
+import LinearProgressWithLabel from "./LinearProgressWithLabel";
 
 // returns info of Atomic Habits by James Clear
 function Atomic() {
 
   const [results, setResult] = useState([]);
+  const [isSearching, setIsSearching] = useState(false);
 
   function handleSearch(query) {
+
+    setIsSearching(true);
+
     console.log(query);
     const queryUrl = 'https://nameless-falls-09464.herokuapp.com/' + query;
     // const queryUrl = 'http://localhost:5000/' + query;
     axios.get(queryUrl, { crossdomain: true }).then(response => {
       setResult(response.data);
+      setIsSearching(false);
     });
   };
 
@@ -23,7 +29,11 @@ function Atomic() {
         onSearch={handleSearch}
       />
       <div>
-        {/* <h1>Results returned by the search query: </h1> */}
+        
+        <div hidden={(isSearching) ? false : true}>
+          {isSearching && <LinearProgressWithLabel value={100} />}
+        </div>
+
         {results.map((result, index) => {
           return (
             <File 

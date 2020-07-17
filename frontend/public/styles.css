@@ -35,7 +35,7 @@ a{
 
 form.create-note {
   position: relative;
-  width: 50%;
+  width: 69%;
   min-width: 100px;
   margin: 30px auto 20px auto;
   background: #fff;
@@ -61,8 +61,10 @@ form.create-note button {
   color: #f0f0f0;
   border: none;
   border-radius: 2% 10% 10% 2%;
-  width: 67px;
-  height: 67px;
+  /* width: 67px; */
+  /* height: 67px; */
+  width: 4.1875rem;
+  height: 4.1875rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   outline: none;
