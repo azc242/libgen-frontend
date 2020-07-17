@@ -48,8 +48,9 @@ form.create-note input {
   border: none;
   padding: 4px;
   outline: none;
-  font-size: 1.2em;
-  font-family: inherit;
+  font-size: 1.2rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
   resize: none;
 }
 form.create-note button {

@@ -11,6 +11,7 @@ function Atomic() {
   function handleSearch(query) {
     console.log(query);
     const queryUrl = 'https://nameless-falls-09464.herokuapp.com/' + query;
+    // const queryUrl = 'http://localhost:5000/' + query;
     axios.get(queryUrl, { crossdomain: true }).then(response => {
       setResult(response.data);
     });
@@ -33,7 +34,6 @@ function Atomic() {
               year={result.year}
               pages={result.pages}
               download={result.download}
-              directDownload={result.directDownload}
               extension={result.extension}
             />
           );

@@ -10,7 +10,6 @@ function File(props){
       year={props.year}
       pages={props.pages}
       download={props.download}
-      directDownload={props.directDownload}
       extension={props.extension}
       />
     </div>
