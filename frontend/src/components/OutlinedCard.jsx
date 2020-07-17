@@ -28,12 +28,14 @@ function OutlinedCard(props) {
   const bull = <span className={classes.bullet}>•</span>;
 
   const year = props.year === "0" ? "" : props.year;
+  const pages = ( props.pages === undefined || props.pages === 0 )? " " : (" | " + props.pages + " pages")
+  const extension = props.extension === undefined ? "N/A" : props.extension;
 
   return (
     <Card className={classes.root} variant="outlined">
       <CardContent>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
-          {props.year}{props.pages !== "0" ? (" | " + props.pages + " pages") : " "}
+          {year}{pages}
         </Typography>
         <Typography variant="h5" component="h2">
           {props.title}
@@ -42,7 +44,7 @@ function OutlinedCard(props) {
           {props.author}
         </Typography>
         <Typography variant="body2" component="p">
-          Extension: {props.extension}
+          Extension: {extension}
           <br />
         </Typography>
       </CardContent>
