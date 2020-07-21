@@ -14,7 +14,6 @@ function Atomic() {
 
     setIsSearching(true);
 
-    console.log(query);
     const queryUrl = 'https://nameless-falls-09464.herokuapp.com/' + query;
     // const queryUrl = 'http://localhost:5000/' + query;
     axios.get(queryUrl, { crossdomain: true }).then(response => {
