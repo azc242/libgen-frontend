@@ -38,9 +38,7 @@ function Atomic() {
       <div hidden={(isSearching) ? false : true}>
           {isSearching && <LinearProgressWithLabel value={100} />}
       </div>
-
       <div hidden={!useAutocorrect || results.length === 0 || oldQuery === correctedQuery}>
-      {console.log(results)}
         <p>Showing results for {correctedQuery}. {" "}
           <a onClick={(event) => {
             handleSearch(oldQuery, correctedQuery);

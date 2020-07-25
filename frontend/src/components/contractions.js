@@ -1,6 +1,7 @@
 
 exports.contractions = [
   "aren't",
+  "ain't",
   "can't",
   "couldn't",
   "didn't",
@@ -29,6 +30,7 @@ exports.contractions = [
   "there's",
   "they'd",
   "they'll",
+  "that'll",
   "they're",
   "they've",
   "we'd",
