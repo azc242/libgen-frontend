@@ -10,6 +10,9 @@ function InputArea(props) {
   // useState for query
   const [query, setQuery] = useState("");
 
+  // checks to see whether query has been corrected or not
+  const [isCorrected, setIsCorrected] = useState(false);
+
   // corrector for contractions
   let correcter = new MicroSpellingCorrecter(
     contractionList,
@@ -42,10 +45,14 @@ function InputArea(props) {
 
     // check for common misspellings
     correctedSpelling = misspellings.correct(correctedSpelling);
+
+    if(query !== correctedSpelling){
+      setIsCorrected(true);
+    }
+    
+    props.onSearch(correctedSpelling, query);
+
     setQuery(correctedSpelling);
-
-    props.onSearch(correctedSpelling);
-
     // prevent page refresh
     event.preventDefault();
   }

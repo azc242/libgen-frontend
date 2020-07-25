@@ -9,9 +9,15 @@ function Atomic() {
 
   const [results, setResult] = useState([]);
   const [isSearching, setIsSearching] = useState(false);
+  // user option to use correction or not
+  const [useAutocorrect, setUseAutocorrect] = React.useState(true);
+  const [correctedQuery, setCorrectedQuery] = React.useState("");
+  const [oldQuery, setOldQuery] = React.useState("");
 
-  function handleSearch(query) {
+  function handleSearch(query, prevQuery) {
 
+    setCorrectedQuery(query);
+    setOldQuery(prevQuery);
     setIsSearching(true);
 
     const queryUrl = 'https://nameless-falls-09464.herokuapp.com/' + query;
@@ -29,9 +35,20 @@ function Atomic() {
       />
       <div>
         
-        <div hidden={(isSearching) ? false : true}>
+      <div hidden={(isSearching) ? false : true}>
           {isSearching && <LinearProgressWithLabel value={100} />}
-        </div>
+      </div>
+
+      <div hidden={!useAutocorrect || results.length === 0 || oldQuery === correctedQuery}>
+      {console.log(results)}
+        <p>Showing results for {correctedQuery}. {" "}
+          <a onClick={(event) => {
+            handleSearch(oldQuery, correctedQuery);
+            event.preventDefault();
+          }}
+          href="">Show search results for {oldQuery} instead.</a>
+        </p>
+      </div>
 
         {results.map((result, index) => {
           return (
