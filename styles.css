@@ -47,6 +47,7 @@ footer {
 
 footer p {
   color: #ccc;
+  opacity: 0.2;
 }
 
 form.create-note {
