@@ -60,7 +60,7 @@ function InputArea(props) {
   return(
     <div className="input-group mb-3">
       <form className="create-note">
-        <input onChange={handleChange} value={query}></input>
+        <input placeHolder="Search for a book or file..." onChange={handleChange} value={query}></input>
         <button onClick={submitQuery}>
             <SearchIcon />
         </button>
