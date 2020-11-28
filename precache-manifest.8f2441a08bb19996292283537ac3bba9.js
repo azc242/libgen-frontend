@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "74ed215969eb7e5e0ef6830c22368f09",
+    "revision": "e77a43070fc7e58f07a62b98fbc2ae8e",
     "url": "/libgen-frontend/index.html"
   },
   {
