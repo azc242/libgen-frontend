@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/libgen-frontend/static/js/main.cd3470ea.chunk.js",
-    "main.js.map": "/libgen-frontend/static/js/main.cd3470ea.chunk.js.map",
+    "main.js": "/libgen-frontend/static/js/main.36d24e00.chunk.js",
+    "main.js.map": "/libgen-frontend/static/js/main.36d24e00.chunk.js.map",
     "runtime-main.js": "/libgen-frontend/static/js/runtime-main.b942a0d9.js",
     "runtime-main.js.map": "/libgen-frontend/static/js/runtime-main.b942a0d9.js.map",
     "static/js/2.38311ea9.chunk.js": "/libgen-frontend/static/js/2.38311ea9.chunk.js",
     "static/js/2.38311ea9.chunk.js.map": "/libgen-frontend/static/js/2.38311ea9.chunk.js.map",
     "index.html": "/libgen-frontend/index.html",
-    "precache-manifest.9d234399bcb9a8f7edaf2b0921b39276.js": "/libgen-frontend/precache-manifest.9d234399bcb9a8f7edaf2b0921b39276.js",
+    "precache-manifest.ba63483fabb0a9e4a0987ded6fb69e4d.js": "/libgen-frontend/precache-manifest.ba63483fabb0a9e4a0987ded6fb69e4d.js",
     "service-worker.js": "/libgen-frontend/service-worker.js",
     "static/js/2.38311ea9.chunk.js.LICENSE.txt": "/libgen-frontend/static/js/2.38311ea9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b942a0d9.js",
     "static/js/2.38311ea9.chunk.js",
-    "static/js/main.cd3470ea.chunk.js"
+    "static/js/main.36d24e00.chunk.js"
   ]
 }
